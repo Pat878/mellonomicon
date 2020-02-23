@@ -6,7 +6,7 @@ const Footer = () => (
     <ul className="icons">
       <li>
         <a
-          href="https://github.com/Pat878"
+          href="https://www.github.com/patmellon"
           target="_blank"
           className="icon fa-github alt"
         >

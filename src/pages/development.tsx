@@ -23,7 +23,7 @@ const About = ({ data }: Props) => {
       <div>
         <p className="about-paragraph">
           Checkout my{" "}
-          <a href="https://www.github.com/pat878" target="_blank">
+          <a href="https://www.github.com/patmellon" target="_blank">
             GitHub
           </a>{" "}
           to see some of my recent work.
