@@ -1,7 +1,7 @@
 import React from "react"
 import { Link } from "gatsby"
-import Footer from "./footer"
-import Nav from "./nav"
+import Footer from "./Footer"
+import Nav from "./Nav"
 
 import "../assets/scss/main.scss"
 import { rhythm, scale } from "../utils/typography"
