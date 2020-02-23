@@ -12,14 +12,13 @@ interface Props {
       }
     }
   }
-  location: Location
 }
 
-const About = ({ data, location }: Props) => {
+const About = ({ data }: Props) => {
   const siteTitle = data.site.siteMetadata.title
 
   return (
-    <Layout location={location} title={siteTitle}>
+    <Layout title={siteTitle}>
       <SEO title="Web Development" />
       <div>
         <p className="about-paragraph">

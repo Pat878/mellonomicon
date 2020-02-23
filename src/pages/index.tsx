@@ -13,14 +13,13 @@ interface Props {
       }
     }
   }
-  location: Location
 }
 
-const Index = ({ data, location }: Props) => {
+const Index = ({ data }: Props) => {
   const siteTitle = data.site.siteMetadata.title
 
   return (
-    <Layout location={location} title={siteTitle}>
+    <Layout title={siteTitle}>
       <SEO title="Pat Mellon" />
       <div>
         <img src={mellon} className="mellon" />

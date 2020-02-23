@@ -14,7 +14,6 @@ interface Props {
       }
     }
   }
-  location: Location
 }
 
 const Blog = ({ data }: Props) => {
@@ -22,7 +21,7 @@ const Blog = ({ data }: Props) => {
   const posts = data.allMarkdownRemark.edges
 
   return (
-    <Layout location={location} title={siteTitle}>
+    <Layout title={siteTitle}>
       <SEO title="Blog" />
       {posts.map(({ node }) => {
         const title = node.frontmatter.title || node.fields.slug

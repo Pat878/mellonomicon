@@ -15,16 +15,15 @@ interface Props {
     }
   }
   pageContext: any
-  location: Location
 }
 
-const BlogPostTemplate = ({ data, pageContext, location }: Props) => {
+const BlogPostTemplate = ({ data, pageContext }: Props) => {
   const post = data.markdownRemark
   const siteTitle = data.site.siteMetadata.title
   const { previous, next } = pageContext
 
   return (
-    <Layout location={location} title={siteTitle}>
+    <Layout title={siteTitle}>
       <SEO
         title={post.frontmatter.title}
         description={post.frontmatter.description || post.excerpt}

@@ -13,7 +13,6 @@ interface Props {
       }
     }
   }
-  location: Location
 }
 
 interface FormData {
@@ -54,7 +53,7 @@ const Contact = ({ data }: Props) => {
   }
 
   return (
-    <Layout location={location} title={siteTitle}>
+    <Layout title={siteTitle}>
       <SEO title="Contact" />
       <div>
         <form

@@ -7,12 +7,11 @@ import "../assets/scss/main.scss"
 import { rhythm, scale } from "../utils/typography"
 
 interface Props {
-  location: Location
   title: string
   children?: any
 }
 
-const Layout = ({ location, title, children }: Props) => {
+const Layout = ({ title, children }: Props) => {
   const rootPath = `${__PATH_PREFIX__}/`
   let header
 

@@ -11,14 +11,13 @@ interface Props {
       }
     }
   }
-  location: Location
 }
 
-const Thanks = ({ data, location }: Props) => {
+const Thanks = ({ data }: Props) => {
   const siteTitle = data.site.siteMetadata.title
 
   return (
-    <Layout location={location} title={siteTitle}>
+    <Layout title={siteTitle}>
       <p>Thanks for reaching out!</p>
     </Layout>
   )
