@@ -77,6 +77,7 @@ const Contact = ({ data }: Props) => {
                 type="text"
                 name="name"
                 id="name"
+                required
                 onChange={handleChange}
               />
             </p>
@@ -88,6 +89,7 @@ const Contact = ({ data }: Props) => {
                 type="email"
                 name="email"
                 id="email"
+                required
                 onChange={handleChange}
               />
             </p>
@@ -99,6 +101,7 @@ const Contact = ({ data }: Props) => {
                 name="message"
                 id="message"
                 rows="5"
+                required
                 onChange={handleChange}
               />
             </p>
