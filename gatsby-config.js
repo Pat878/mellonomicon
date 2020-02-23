@@ -42,9 +42,6 @@ module.exports = {
           `gatsby-remark-prismjs`,
           `gatsby-remark-copy-linked-files`,
           `gatsby-remark-smartypants`,
-          `gatsby-plugin-sass`,
-          `gatsby-plugin-typescript`,
-          `gatsby-plugin-styled-components`
         ],
       },
     },
@@ -77,5 +74,8 @@ module.exports = {
         pathToConfigModule: `src/utils/typography`,
       },
     },
+    `gatsby-plugin-sass`,
+    `gatsby-plugin-typescript`,
+    'gatsby-plugin-styled-components'
   ],
 }
