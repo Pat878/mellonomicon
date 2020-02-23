@@ -76,6 +76,12 @@ module.exports = {
     },
     `gatsby-plugin-sass`,
     `gatsby-plugin-typescript`,
-    'gatsby-plugin-styled-components'
+    "gatsby-plugin-styled-components",
+    {
+      resolve: `gatsby-plugin-google-analytics`,
+      options: {
+        trackingId: process.env.GOOGLE_ANALYTICS_TRACKING_ID || "none",
+      },
+    },
   ],
 }
