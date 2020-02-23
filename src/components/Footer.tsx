@@ -6,15 +6,6 @@ const Footer = () => (
     <ul className="icons">
       <li>
         <a
-          href="https://twitter.com/ptmlln"
-          target="_blank"
-          className="icon fa-twitter alt"
-        >
-          <span className="label">Twitter</span>
-        </a>
-      </li>
-      <li>
-        <a
           href="https://github.com/Pat878"
           target="_blank"
           className="icon fa-github alt"
@@ -29,6 +20,15 @@ const Footer = () => (
           className="icon fa-linkedin alt"
         >
           <span className="label">LinkedIn</span>
+        </a>
+      </li>
+      <li>
+        <a
+          href="https://twitter.com/ptmlln"
+          target="_blank"
+          className="icon fa-twitter alt"
+        >
+          <span className="label">Twitter</span>
         </a>
       </li>
     </ul>
