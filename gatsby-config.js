@@ -10,6 +10,13 @@ module.exports = {
   },
   plugins: [
     {
+      resolve: `gatsby-plugin-google-analytics`,
+      options: {
+        trackingId: process.env.GOOGLE_ANALYTICS_TRACKING_ID || "none",
+        head: true,
+      },
+    },
+    {
       resolve: `gatsby-source-filesystem`,
       options: {
         path: `${__dirname}/content/blog`,
@@ -77,11 +84,5 @@ module.exports = {
     `gatsby-plugin-sass`,
     `gatsby-plugin-typescript`,
     "gatsby-plugin-styled-components",
-    {
-      resolve: `gatsby-plugin-google-analytics`,
-      options: {
-        trackingId: process.env.GOOGLE_ANALYTICS_TRACKING_ID || "none",
-      },
-    },
   ],
 }
